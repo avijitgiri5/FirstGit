@@ -1,7 +1,7 @@
 // //console.dir(document)
 // console.log(document.domain)    
 // //console.log(document.title) 
-document.title=123
+document.title=123;
 // console.log(document.head)
 // // console.log(document.all)
 // // console.log(document.all[10])
