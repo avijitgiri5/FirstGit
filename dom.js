@@ -23,15 +23,15 @@ additems.style.color='green'
 // headerTitle.innerText="Goodby"
 //headerTitle.innerHTML='<h1>Hello</h1>'
 
-let items=document.getElementsByClassName('list-group-item')
-// console.log(items)
-items[0].textContent="Hello"
-items[0].style.fontWeight='bold'
-items[0].style.backgroundColor="yellow"
-for(let i=0;i<items.length;i++)
-[
-    items[i].style.backgroundColor='#f4f4f4',
-    items[i].style.fontWeight="bold",
-    items[i].style.color='red',
-    items[i].textContent="Hello"
-]
+// let items=document.getElementsByClassName('list-group-item')
+// // console.log(items)
+// items[0].textContent="Hello"
+// items[0].style.fontWeight='bold'
+// items[0].style.backgroundColor="yellow"
+// for(let i=0;i<items.length;i++)
+// [
+//     items[i].style.backgroundColor='#f4f4f4',
+//     items[i].style.fontWeight="bold",
+//     items[i].style.color='red',
+//     items[i].textContent="Hello"
+// ]
