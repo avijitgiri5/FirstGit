@@ -30,8 +30,17 @@ additems.style.color='green'
 // items[0].style.fontWeight='bold'
  items[2].style.backgroundColor="green"
 for(let i=0;i<items.length;i++)
-[
+{
     
-    items[i].style.fontWeight="bold",
+    items[i].style.fontWeight="bold"
     
-]
+}
+
+const newli=document.getElementsByClassName('new-item')
+newli[0].style.fontWeight="bold"
+newli[0].style.backgroundColor="red";
+newli[0].textContent="New Li element"
+newli[0].style.padding="15px"
+
+
+
