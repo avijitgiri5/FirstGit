@@ -24,17 +24,18 @@ additems.style.color='green'
 // headerTitle.innerText="Goodby"
 //headerTitle.innerHTML='<h1>Hello</h1>'
 
- let items=document.getElementsByClassName('list-group-item')
-// // console.log(items)
-//items[0].textContent="Hello"
-// items[0].style.fontWeight='bold'
- items[2].style.backgroundColor="green"
-for(let i=0;i<items.length;i++)
-{
+//  let items=document.getElementsByClassName('list-group-item')
+// // // console.log(items)
+// //items[0].textContent="Hello"
+// // items[0].style.fontWeight='bold'
+//  items[2].style.backgroundColor="green"
+// for(let i=0;i<items.length;i++)
+// {
     
-    items[i].style.fontWeight="bold"
+//     items[i].style.fontWeight="bold"
     
-}
+// }
+////GET ELEMENTBYCLASSNAME//////
 
 // const newli=document.getElementsByClassName('new-item')
 // newli[0].style.fontWeight="bold"
@@ -42,10 +43,39 @@ for(let i=0;i<items.length;i++)
 // newli[0].textContent="New Li element"
 // newli[0].style.padding="15px"
 
-const li=document.getElementsByTagName('li')
-li[4].textContent="New Li Modification";
-li[4].style.fontWeight="bold";
-li[4].style.backgroundColor="red";
-li[4].style.padding="15px"
+
+//GET ELEMENTBYTAG NAME//////
+
+// const li=document.getElementsByTagName('li')
+// li[4].textContent="New Li Modification";
+// li[4].style.fontWeight="bold";
+// li[4].style.backgroundColor="red";
+// li[4].style.padding="15px"
 
 
+////QUERYSELETOR////////
+
+
+let header=document.querySelector('#main-header');
+header.style.borderBottom="solid 3px #000";
+//first input element change ///////////////////////////////////////////////////
+let input=document.querySelector('input');
+input.value="Hello";
+
+/////change button by css name//////////////////////////////////////////
+let submit=document.querySelector('input[type="submit"]');
+submit.value="send"
+submit.style.backgroundColor="yellow"
+
+//another way to modified button by class name/////////////////////////////////
+// let btn=document.querySelector('.btn');
+// btn.value="new botton";
+// btn.style.backgroundColor="red"
+
+
+/////////////modify list item by ul tag//////////////////////////////////////////
+let ul=document.querySelector("#items");
+// ul.firstElementChild.style.color="red"
+// ul.lastElementChild.style.color="yellow"
+ul.children[1].style.backgroundColor="green"
+ul.children[2].style.display="none"
