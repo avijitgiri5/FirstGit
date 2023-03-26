@@ -36,11 +36,16 @@ for(let i=0;i<items.length;i++)
     
 }
 
-const newli=document.getElementsByClassName('new-item')
-newli[0].style.fontWeight="bold"
-newli[0].style.backgroundColor="red";
-newli[0].textContent="New Li element"
-newli[0].style.padding="15px"
+// const newli=document.getElementsByClassName('new-item')
+// newli[0].style.fontWeight="bold"
+// newli[0].style.backgroundColor="red";
+// newli[0].textContent="New Li element"
+// newli[0].style.padding="15px"
 
+const li=document.getElementsByTagName('li')
+li[4].textContent="New Li Modification";
+li[4].style.fontWeight="bold";
+li[4].style.backgroundColor="red";
+li[4].style.padding="15px"
 
 
