@@ -56,16 +56,18 @@ additems.style.color='green'
 ////QUERYSELETOR////////
 
 
-let header=document.querySelector('#main-header');
-header.style.borderBottom="solid 3px #000";
+// let header=document.querySelector('#main-header');
+// header.style.borderBottom="solid 3px #000";
+
+
 //first input element change ///////////////////////////////////////////////////
-let input=document.querySelector('input');
-input.value="Hello";
+// let input=document.querySelector('input');
+// input.value="Hello";
 
 /////change button by css name//////////////////////////////////////////
-let submit=document.querySelector('input[type="submit"]');
-submit.value="send"
-submit.style.backgroundColor="yellow"
+// let submit=document.querySelector('input[type="submit"]');
+// submit.value="send"
+// submit.style.backgroundColor="yellow"
 
 //another way to modified button by class name/////////////////////////////////
 // let btn=document.querySelector('.btn');
@@ -74,8 +76,23 @@ submit.style.backgroundColor="yellow"
 
 
 /////////////modify list item by ul tag//////////////////////////////////////////
-let ul=document.querySelector("#items");
-// ul.firstElementChild.style.color="red"
-// ul.lastElementChild.style.color="yellow"
-ul.children[1].style.backgroundColor="green"
-ul.children[2].style.display="none"
+// let ul=document.querySelector("#items");
+// // ul.firstElementChild.style.color="red"
+// // ul.lastElementChild.style.color="yellow"
+// ul.children[1].style.backgroundColor="green"
+// ul.children[2].style.display="none"
+
+////////queryselectorAll////////////////////////////////////////////////////
+// let titles=document.querySelectorAll('.title');
+// titles[0].textContent="Hello"
+// titles[1].textContent="list Items"
+
+let li_items=document.querySelectorAll('li');
+li_items[1].style.color="green"
+
+let od=document.querySelectorAll('li:nth-child(odd)')
+for(let i=0;i<od.length;i++)
+{
+    od[i].style.backgroundColor="green"
+
+}
